@@ -14,7 +14,8 @@ int main()
 	if ( r.is_valid() ) {
 		r.set_buffer( ... );
 
-		int n = 100;
+		// render circle with radius 100 at 0,0
+		int n = 64;
 		for ( int i = 0; i < n; i++ ) {
 			float angle = float(i) / n * 3.1415 * 2;
 			float x = sin( angle ) * 100;
@@ -25,9 +26,7 @@ int main()
 				r.line_to( x, y );
 			}
 		}
-
 		r.render();
-
 	}
 	return 0;
 }
