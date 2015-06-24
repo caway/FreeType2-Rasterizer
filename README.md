@@ -1,0 +1,1 @@
+Just an axample how can be used Freetype2 standalone rasterizer.
