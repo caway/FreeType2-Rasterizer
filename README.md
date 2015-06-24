@@ -6,7 +6,7 @@ Just an example how can be used Freetype2 standalone rasterizer.
 Example:
 ```cpp
 
-#include "ft2_rasterizer.h"
+#include "ft2ras_wrapper.hpp"
 
 int main()
 {
