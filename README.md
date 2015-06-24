@@ -1,7 +1,7 @@
 Just an example how can be used Freetype2 standalone rasterizer.
 ---
 
-![alt tag](https://raw.github.com/caway/FreeType2-Rasterizer-CPP-Wrapper/master/example.png)
+![alt tag](https://raw.github.com/caway/Freetype2-Standalone-CPP-Rasterizer-Wrapper/master/example.png)
 
 Example:
 ```cpp
@@ -12,7 +12,12 @@ int main()
 {
 	ft2::rasterizer r;
 	if ( r.is_valid() ) {
-		r.set_buffer( ... );
+
+		r.set_buffer(
+			buffer_pointer,
+			buffer_width,
+			buffer_height,
+			buffer_stride ); // in bytes
 
 		// render circle with radius 100 at 0,0
 		int n = 64;
@@ -27,6 +32,11 @@ int main()
 			}
 		}
 		r.render();
+
+		...
+		blit buffer to screen or save to file
+		...
+
 	}
 	return 0;
 }
