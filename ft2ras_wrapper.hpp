@@ -13,7 +13,7 @@ namespace ft2 {
             x > y ? x + ( 3 * y >> 3 )   \
                   : y + ( 3 * x >> 3 ) )
 
-#include "ftgrays/ftgrays.cpp"
+#include "ftgrays/ftgrays.c"
 
 class rasterizer {
 	void close_contour() {
