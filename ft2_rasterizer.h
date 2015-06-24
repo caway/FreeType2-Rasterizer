@@ -88,7 +88,6 @@ public:
 		m_tform = tform;
 	}
 
-
 	void move_to( float x, float y ) {
 		close_contour();
 		add_point( x, y );
