@@ -31,6 +31,8 @@ class rasterizer {
 	}
 
 public:
+	rasterizer( const rasterizer & ) = delete;
+
 	rasterizer( const size_t pool_size = 1024 * 64 ) :
 		m_pool( new (std::nothrow) uint8_t [pool_size] ),
 		m_tform( []( float &, float & ){} )
